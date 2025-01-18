@@ -1,5 +1,7 @@
 # 🎬 Movie Recommendation System
 
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7b67f52a-d703-4943-80b2-584d2263bb27)
+
 A Movie recommendation system built using Streamlit. The application suggests movies based on user input by leveraging similarity measures between movies. Used content-based filtering and cosine similarity in Python with Streamlit for an interactive UI.
 
 ---
@@ -27,6 +29,7 @@ To run the project locally, follow these steps:
    git clone https://github.com/yourusername/movie-recommender.git
    cd movie-recommender
    ```
+   
 2. **💻 Set up a virtual environment (optional but recommended): Can use Pycharm instead**
    ```bash
    python -m venv venv
@@ -36,17 +39,21 @@ To run the project locally, follow these steps:
    # For macOS/Linux:
    source venv/bin/activate
    ```
+   
 3. **📦 Install the required dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
+   
 4. **📝 Generate the `movie_dict.pkl` file:**
    Open the provided Jupyter Notebook (`generate_movie_data.ipynb`) in your preferred editor and run all cells to generate the `movie_dict.pkl` and `similarity.pkl` files. Place these files in the root directory of the project.
-5. **🚀 Run the application:**
+   
+6. **🚀 Run the application:**
    ```bash
    streamlit run app.py
    ```
-6. **🌍 Access the app:**
+   
+7. **🌍 Access the app:**
    Open your browser and navigate to `http://localhost:8501`.
 
 ---
