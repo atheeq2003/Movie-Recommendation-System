@@ -1,7 +1,12 @@
-
 # 🎬 Movie Recommendation System
 
 A Movie recommendation system built using Streamlit. The application suggests movies based on user input by leveraging similarity measures between movies. Used content-based filtering and cosine similarity in Python with Streamlit for an interactive UI.
+
+---
+
+## 🌐Deployed App
+
+[➡️ ](https://atheeq2003-movie-recommender.streamlit.app/)**Explore the Deployed App Here**
 
 ---
 
@@ -10,12 +15,6 @@ A Movie recommendation system built using Streamlit. The application suggests mo
 * 🎥 Recommends movies similar to the one selected by the user.
 * 🖼️ Displays posters of recommended movies.
 * 💻 Interactive and user-friendly UI built with Streamlit.
-
----
-
-## 🌐Deployed App
-
-Visit the deployed app [here](https://atheeq2003-movie-recommender.streamlit.app/).
 
 ---
 
