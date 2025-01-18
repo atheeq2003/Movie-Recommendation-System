@@ -6,7 +6,7 @@ A Movie recommendation system built using Streamlit. The application suggests mo
 
 ## 🌐Deployed App
 
-[➡️ ](https://atheeq2003-movie-recommender.streamlit.app/)**Explore the Deployed App Here**
+[➡️ ](https://atheeq2003-movie-recommender.streamlit.app/)**[Explore the Deployed App Here](https://atheeq2003-movie-recommender.streamlit.app/)**
 
 ---
 
