@@ -47,7 +47,9 @@ To run the project locally, follow these steps:
    <br>
 4. **📝 Generate the `movie_dict.pkl` file:**
    Open the provided Jupyter Notebook (`generate_movie_data.ipynb`) in your preferred editor and run all cells to generate the `movie_dict.pkl` and `similarity.pkl` files. Place these files in the root directory of the project.
+   
    <br>
+   
 6. **🚀 Run the application:**
    ```bash
    streamlit run app.py
