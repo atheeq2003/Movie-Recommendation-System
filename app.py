@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+from io import BytesIO
 
 # Function to fetch poster from API
 def fetch_poster(movie_id):
@@ -25,10 +26,25 @@ def recommend(movie):
         recommended_movies_posters.append(fetch_poster(movie_id))  # Fetch poster URL
     return recommended_movies, recommended_movies_posters
 
+# Download .pkl files from GitHub Releases
+@st.cache_data
+def load_data():
+    # Replace with your GitHub release download URLs
+    movie_dict_url = "https://github.com/atheeq2003/Movie-Recommendation-System/releases/download/files/movie_dict.pkl"
+    similarity_url = "https://github.com/atheeq2003/Movie-Recommendation-System/releases/download/files/similarity.pkl"
+
+    # Download movie_dict.pkl
+    response = requests.get(movie_dict_url)
+    movies_dict = pickle.load(BytesIO(response.content))
+
+    # Download similarity.pkl
+    response = requests.get(similarity_url)
+    similarity = pickle.load(BytesIO(response.content))
+
+    return pd.DataFrame(movies_dict), similarity
+
 # Load movie data and similarity matrix
-movies_dict = pickle.load(open('movie_dict.pkl', 'rb'))
-movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+movies, similarity = load_data()
 
 # Streamlit UI
 st.title('Movie Recommender System')
