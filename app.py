@@ -4,6 +4,12 @@ import pandas as pd
 import requests
 from io import BytesIO
 
+st.set_page_config(
+    page_title="Movie Recommender System",  
+    page_icon="🎬",  
+    layout="wide"  
+)
+
 # Function to fetch poster from API
 def fetch_poster(movie_id):
     response = requests.get(
