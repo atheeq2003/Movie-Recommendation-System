@@ -30,6 +30,7 @@ To run the project locally, follow these steps:
    cd movie-recommender
    ```
    
+   
 2. **💻 Set up a virtual environment (optional but recommended): Can use Pycharm instead**
    ```bash
    python -m venv venv
@@ -39,19 +40,23 @@ To run the project locally, follow these steps:
    # For macOS/Linux:
    source venv/bin/activate
    ```
+
    
 3. **📦 Install the required dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
+
    
 4. **📝 Generate the `movie_dict.pkl` file:**
    Open the provided Jupyter Notebook (`generate_movie_data.ipynb`) in your preferred editor and run all cells to generate the `movie_dict.pkl` and `similarity.pkl` files. Place these files in the root directory of the project.
+
    
 6. **🚀 Run the application:**
    ```bash
    streamlit run app.py
    ```
+
    
 7. **🌍 Access the app:**
    Open your browser and navigate to `http://localhost:8501`.
